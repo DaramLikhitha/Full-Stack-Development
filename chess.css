@@ -1,0 +1,25 @@
+*{
+    color: rgb(0, 0, 0);
+}
+
+.chess{
+    margin: 10px 30%;
+    border: solid 2px black;
+    border-color: rgb(2, 2, 2);
+    width: 640px;
+    height: 640px;
+}
+
+.black{
+    background-color: black;
+    float: left;
+    width: 80px;
+    height: 80px;
+}
+
+.white{
+    background-color: white;
+    float: left;
+    width: 80px;
+    height: 80px;
+}
