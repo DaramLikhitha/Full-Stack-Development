@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Single Page Application</title>
+    </head>
+
+    <script>
+        var pages = {
+            'home' : 'Welcome...This is Home Page !!',
+            'aboutus' : 'This is About Us Page !!',
+            'services' : 'This is Services Page !!',
+            'contact' : 'This is Contact Page !!'
+        };
+
+        function getPageContent(page){
+            var contentToReturn
+
+            switch(page){
+                case 'home':
+                    contentToReturn=pages.home;
+                    break;
+                case 'aboutus':
+                    contentToReturn=pages.aboutus;
+                    break;
+                case 'services':
+                    contentToReturn=pages.services;
+                    break;
+                case 'contact':
+                    contentToReturn=pages.contact;
+                    break;
+                default:
+                    contentToReturn=pages.home;
+                    break;
+            }
+
+            document.getElementById('content').innerHTML = contentToReturn;
+        }
+    </script>
+
+    <body onload="getPageContent('home')">
+        <div style="width:20%; float:left; background:rgb(194, 65, 115); color:black; height:100%;">
+            <ul>
+                <li style="line-height: 50px;"><a href="#" onclick="getPageContent('home')"  style="color:black;">HOME</a></li>
+                <li style="line-height: 50px;"><a href="#" onclick="getPageContent('aboutus')" style="color:black;">ABOUT US</a></li>
+                <li style="line-height: 50px;"><a href="#" onclick="getPageContent('services')" style="color:black;">SERVICES</a></li>
+                <li style="line-height: 50px;"><a href="#" onclick="getPageContent('contact')" style="color:black;">CONTACT US</a></li>
+            </ul>
+        </div>
+
+        <div style="width: 80%; float:right; background:rgb(230, 218, 173); color:orangered; height:100%; font-size:50px;">
+            <p style="margin-left: 50px;" id="content"></p>
+        </div>
+
+    </body>
+</html>

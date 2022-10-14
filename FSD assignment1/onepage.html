@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <title>Single Page Application</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            html{
+                scroll-behavior: smooth;
+            }
+            body{
+                font-size: 100%;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            header{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                padding: 20px 10px;
+                align-items: center;
+                position: fixed;
+                z-index: 999;
+            }
+            #menu li{
+                list-style: none;
+                display: inline-block;
+                margin: 10px;
+                padding-right: 15px;
+            }
+            #menu li a{
+                color: white ;
+                text-decoration: none;
+                font-size: 15px;
+            }
+            section{
+                color: azure;
+                width: 100%;
+                float: right;
+                height: 100vh;
+                position: relative;
+            }
+            #home{
+                background-image: url("bg1.jpeg");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            #aboutus{
+                background-image: url("bg2.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            #services{
+                background-image: url("bg3.jfif");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            #contant{
+                background-image: url("bg4.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            h1{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+        </style>
+    </head>
+
+    <body>
+        <section id="home">
+            <header>
+                <h2>Single Page Application</h2>
+                <ul id="menu">
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#aboutus">ABOUT US</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#contant">CONTACT US</a></li>
+                </ul>
+            </header>
+            <h1>Welcome To Home Page !!!</h1>
+        </section>
+        <section id="aboutus"><h1>This is About Us Page !!</h1></section>
+        <section id="services"><h1>This is Services Page !!</h1></section>
+        <section id="contant"><h1>This is Contact Page !!</h1></section>
+    </body>
+</html>
