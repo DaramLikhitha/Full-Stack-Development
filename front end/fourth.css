@@ -1,0 +1,17 @@
+div{
+    border: 1px solid black;
+    /*border-width: 2px;
+    border-style: solid;
+    border-color: black;*/
+    padding: 10px;
+    background-color: blueviolet;
+    color: white;
+    margin: 20px;
+    height: 50vh; /* vh,vw like % of height,width */
+    width: 50vw;
+}
+
+/* pseudo sector */
+li:nth-child(2n){
+    background-color: plum;
+}
